@@ -259,7 +259,7 @@ class SalObjDataset(Dataset):
 		elif(2==len(image.shape) and 2==len(label.shape)):
 			image = image[:,:,np.newaxis]
 			label = label[:,:,np.newaxis]
-
+		print(type(image), type(label))
 		sample = {'imidx':imidx, 'image':image, 'label':label}
 
 		if self.transform:
