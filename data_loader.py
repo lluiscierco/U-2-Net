@@ -264,5 +264,5 @@ class SalObjDataset(Dataset):
 
 		if self.transform:
 			sample = self.transform(sample)
-		print (type(image),type(label), imidx)
+		print (image.dtype,label.dtype, imidx)
 		return sample
